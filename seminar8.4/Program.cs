@@ -1,4 +1,6 @@
-﻿int[,,] CreateArrayThree(int layerCount, int rowCount, int columnCount)
+﻿//Не разобрался как заполнить массив не повторяющимися числами
+
+int[,,] CreateArrayThree(int layerCount, int rowCount, int columnCount)
 {
     int[,,] array = new int[layerCount, rowCount, columnCount];
     for (int layer = 0; layer < layerCount; layer++)
