@@ -1,4 +1,6 @@
-﻿void PrintMatrix(int[,] matrix)
+﻿//Очень сложная задача, решение загуглил
+
+void PrintMatrix(int[,] matrix)
 {
     for (int row = 0; row < matrix.GetLength(0); row++)
     {
