@@ -1,7 +1,8 @@
-﻿//Не разобрался как заполнить массив не повторяющимися числами
+﻿//не получилось заполнить рандомными неповторяющимися числами, сделал по порядку
 
 int[,,] CreateArrayThree(int layerCount, int rowCount, int columnCount)
 {
+    int count = 10;
     int[,,] array = new int[layerCount, rowCount, columnCount];
     for (int layer = 0; layer < layerCount; layer++)
     {
@@ -9,7 +10,7 @@ int[,,] CreateArrayThree(int layerCount, int rowCount, int columnCount)
         {
             for (int column = 0; column < columnCount; column++)
             {
-                array[layer, row, column] = new Random().Next(10, 100);
+                array[layer, row, column] = count++;
             }
         }
     }
