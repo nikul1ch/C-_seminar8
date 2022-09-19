@@ -11,7 +11,7 @@
     return matrix;
 }
 
-int[,] matrixMultiplication(int[,] matrixFirst, int[,] matrixSecond)
+int[,] MatrixMultiplication(int[,] matrixFirst, int[,] matrixSecond)
 {
         if (matrixFirst.GetLength(0) != matrixSecond.GetLength(1))
     {
@@ -75,4 +75,4 @@ Console.WriteLine();
 
 Console.WriteLine("Произведение матриц равно:");
 Console.WriteLine();
-PrintMatrix(matrixMultiplication(matrixFirst, matrixSecond));
+PrintMatrix(MatrixMultiplication(matrixFirst, matrixSecond));
